@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/income-ticker/static/css/main.b856391a.css",
-    "main.js": "/income-ticker/static/js/main.9f1ce283.js",
+    "main.css": "/income-ticker/static/css/main.fe848975.css",
+    "main.js": "/income-ticker/static/js/main.1c56c0b4.js",
     "static/js/787.db278ebe.chunk.js": "/income-ticker/static/js/787.db278ebe.chunk.js",
     "static/media/CreditCardFont.ttf": "/income-ticker/static/media/CreditCardFont.8d7994cdb4113aba391d.ttf",
     "static/media/options.svg": "/income-ticker/static/media/options.fca1af11251993b325103700f1fbc2cc.svg",
     "index.html": "/income-ticker/index.html",
-    "main.b856391a.css.map": "/income-ticker/static/css/main.b856391a.css.map",
-    "main.9f1ce283.js.map": "/income-ticker/static/js/main.9f1ce283.js.map",
+    "main.fe848975.css.map": "/income-ticker/static/css/main.fe848975.css.map",
+    "main.1c56c0b4.js.map": "/income-ticker/static/js/main.1c56c0b4.js.map",
     "787.db278ebe.chunk.js.map": "/income-ticker/static/js/787.db278ebe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b856391a.css",
-    "static/js/main.9f1ce283.js"
+    "static/css/main.fe848975.css",
+    "static/js/main.1c56c0b4.js"
   ]
 }
