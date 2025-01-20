@@ -10,7 +10,7 @@ export default function EarningsDisplay({ getCurrentValFunc }) {
       setEarningsCents(Math.round(getCurrentValFunc()));
     }, 500);
     return () => clearInterval(interval);
-  }, []);
+  }, [getCurrentValFunc]);
 
   const decimals = earningsCents.toString().split("");
   const cents = decimals.splice(Math.max(decimals.length - 2, 0));
@@ -39,7 +39,7 @@ export default function EarningsDisplay({ getCurrentValFunc }) {
         );
       })}
       .
-      {cents.map((value, idx) => (
+      {cents.map((value) => (
         <Counter val={value} />
       ))}
     </div>

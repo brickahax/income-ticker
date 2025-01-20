@@ -73,13 +73,13 @@ export default function IncomeScreen() {
       setWorkStatus("Work starting soon");
       return 0.0;
     } else if (msOfDay(currentTime, false) < msOfDay(lunchBreak.start)) {
-      setWorkStatus("Work in progress");
+      setWorkStatus("Time to grind");
       return msOfDay(currentTime, false) - msOfDay(workHours.start);
     } else if (msOfDay(currentTime, false) < msOfDay(lunchBreak.end)) {
       setWorkStatus("Lunch break");
       return msOfDay(lunchBreak.start) - msOfDay(workHours.start);
     } else if (msOfDay(currentTime, false) < msOfDay(workHours.end)) {
-      setWorkStatus("Work in progress");
+      setWorkStatus("Time to grind");
       return (
         msOfDay(lunchBreak.start) -
         msOfDay(workHours.start) +
@@ -201,7 +201,10 @@ export default function IncomeScreen() {
             link={"setup"}
           />
         </div>
-        <div className={styles.workStatus}>{workStatus}</div>
+
+        <div className={styles.workStatus}>
+          <div className={styles.roundedBox}>{workStatus}</div>
+        </div>
       </div>
     </div>
   );

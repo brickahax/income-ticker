@@ -1,13 +1,33 @@
 body {
   margin: 0;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+input,
+select,
+input.rc-time-picker-input,
+.rc-time-picker-panel .rc-time-picker-panel-inner,
+.react-datepicker-wrapper .react-datepicker__input-container input {
+  color: #fff;
+  background-color: #4c4c4c;
+  border: 1px solid #161616;
+}
+
+.rc-time-picker-panel .rc-time-picker-panel-inner {
+  .rc-time-picker-panel-select li:hover {
+    background: #205a9d;
+  }
+
+  li.rc-time-picker-panel-select-option-selected {
+    background: #0075ff;
+  }
 }
